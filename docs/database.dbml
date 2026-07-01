@@ -53,9 +53,8 @@ Table Task {
     course_id uuid [ref: > Courses.id]
     problem_id uuid [ref: > Problems.id]
     created_at timestamp
-    done_at timestamp
-    status Status
-    quality Quality
+    deadline timestamp
+    task_status Status
     updated_at timestamp
 }
 

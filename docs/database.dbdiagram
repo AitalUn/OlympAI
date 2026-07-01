@@ -27,8 +27,8 @@
       {
         "name": "Task",
         "schemaName": "public",
-        "x": 643.9339885339238,
-        "y": 574.9065262838906
+        "x": 664.1711709511527,
+        "y": 572.3693278934372
       },
       {
         "name": "TopicMastery",
@@ -52,21 +52,6 @@
     "tableGroupCollapseStates": [],
     "stickyNoteLayouts": [],
     "referencePaths": [
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Topics",
-        "firstSchemaName": "public",
-        "firstRelation": "1",
-        "secondFieldNames": [
-          "topic"
-        ],
-        "secondTableName": "Problems",
-        "secondSchemaName": "public",
-        "secondRelation": "*",
-        "checkPoints": []
-      },
       {
         "firstFieldNames": [
           "id"
@@ -95,7 +80,24 @@
         "secondTableName": "TopicMastery",
         "secondSchemaName": "public",
         "secondRelation": "*",
-        "checkPoints": []
+        "checkPoints": [
+          {
+            "x": 644.2068831344468,
+            "y": 651.6557908199559
+          },
+          {
+            "x": 644.2068831344468,
+            "y": 529.2373623724728
+          },
+          {
+            "x": 517.4672261564831,
+            "y": 529.2373623724728
+          },
+          {
+            "x": 517.4672261564831,
+            "y": 406.8189339249898
+          }
+        ]
       },
       {
         "firstFieldNames": [
@@ -108,21 +110,6 @@
           "topic_id"
         ],
         "secondTableName": "TopicMastery",
-        "secondSchemaName": "public",
-        "secondRelation": "*",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Courses",
-        "firstSchemaName": "public",
-        "firstRelation": "1",
-        "secondFieldNames": [
-          "subject_id"
-        ],
-        "secondTableName": "Topics",
         "secondSchemaName": "public",
         "secondRelation": "*",
         "checkPoints": []
