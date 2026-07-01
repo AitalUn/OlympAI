@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Базы данных SQLite (dev)
+*.db
+
+# Секреты
+.env
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Примеры
+frontend_example
+backend_example
+README_v1.md

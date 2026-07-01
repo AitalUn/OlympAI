@@ -1,0 +1,65 @@
+Enum Quality {
+    bad
+    middle
+    good
+}
+
+Enum Status {
+    done
+    in_porgress
+    waiting
+}
+
+Table Students{
+    id uuid [pk]
+    name str
+    created_at date
+}
+
+Table StudentCard{
+    id uuid [pk]
+    student_id uuid [ref: > Students.id]
+    topic_id uuid [ref: < Topics.id]
+    quality Quality
+    description str
+}
+
+Table StudyPlan{
+    id uuid [pk]
+    subject_id uuid [ref: > Subjects.id]
+    student_id uuid [ref: > Students.id]
+    created_at date 
+    name str
+}
+
+Table Task{
+    id uuid [pk]
+    study_plan_id uuid [ref: >  StudyPlan.id]
+    problem_id uuid [ref: - Problems.id]
+    created_at date
+    done_at date
+    status Status
+    quality Quality
+}
+
+Table Subjects{
+    id uuid [pk]
+    name str 
+}
+
+Table Topics{
+    id uuid [pk]
+    subject_id uuid [ref: > Subjects.id]
+    name str
+}
+
+Table Problems{
+    id uuid [pk]
+    topic uuid [ref: > Topics.id]
+    name str
+    description str
+    solution str
+    answer str
+}
+
+
