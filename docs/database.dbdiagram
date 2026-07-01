@@ -7,126 +7,51 @@
     "detailLevel": "All",
     "tablePositions": [
       {
-        "name": "Subjects",
-        "schemaName": "public",
-        "x": 336.14592495740095,
-        "y": 181.9571957696528
-      },
-      {
         "name": "Problems",
         "schemaName": "public",
-        "x": 559.3581612126725,
-        "y": 395.747647636389
-      },
-      {
-        "name": "StudentCard",
-        "schemaName": "public",
-        "x": -7.044970014828522,
-        "y": -70.03359409234972
+        "x": 927.4267292001464,
+        "y": 574.9065262838906
       },
       {
         "name": "Students",
         "schemaName": "public",
-        "x": -273.32329547132775,
-        "y": 133.06468580221076
-      },
-      {
-        "name": "StudyPlan",
-        "schemaName": "public",
-        "x": -0.1382317335785217,
-        "y": 395.747647636389
+        "x": 175.21252983405492,
+        "y": 603.6557908199559
       },
       {
         "name": "Topics",
         "schemaName": "public",
-        "x": 567.1618721501725,
-        "y": -6.033594092349716
+        "x": 1231.7348071364545,
+        "y": 566.4466106452761
       },
       {
         "name": "Task",
         "schemaName": "public",
-        "x": 300.19499722302595,
-        "y": 363.747647636389
+        "x": 643.9339885339238,
+        "y": 574.9065262838906
+      },
+      {
+        "name": "TopicMastery",
+        "schemaName": "public",
+        "x": 916.1909825285888,
+        "y": 326.8189339249898
+      },
+      {
+        "name": "Courses",
+        "schemaName": "public",
+        "x": 966.1073892397997,
+        "y": 946.8779068560589
+      },
+      {
+        "name": "StudentsCourses",
+        "schemaName": "public",
+        "x": 664.3616006386527,
+        "y": 912.254865467306
       }
     ],
     "tableGroupCollapseStates": [],
     "stickyNoteLayouts": [],
     "referencePaths": [
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "1",
-        "secondFieldNames": [
-          "subject_id"
-        ],
-        "secondTableName": "Problems",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "subject_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Students",
-        "firstSchemaName": "public",
-        "firstRelation": "1",
-        "secondFieldNames": [
-          "student_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "*",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Students",
-        "firstSchemaName": "public",
-        "firstRelation": "1",
-        "secondFieldNames": [
-          "student_id"
-        ],
-        "secondTableName": "StudyPlan",
-        "secondSchemaName": "public",
-        "secondRelation": "*",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "1",
-        "secondFieldNames": [
-          "subject_id"
-        ],
-        "secondTableName": "Topics",
-        "secondSchemaName": "public",
-        "secondRelation": "*",
-        "checkPoints": []
-      },
       {
         "firstFieldNames": [
           "id"
@@ -154,51 +79,6 @@
         ],
         "secondTableName": "Task",
         "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "StudyPlan",
-        "firstSchemaName": "public",
-        "firstRelation": "1",
-        "secondFieldNames": [
-          "studi_plan_id"
-        ],
-        "secondTableName": "Task",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "StudyPlan",
-        "firstSchemaName": "public",
-        "firstRelation": "1",
-        "secondFieldNames": [
-          "stud_plan_id"
-        ],
-        "secondTableName": "Task",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "StudyPlan",
-        "firstSchemaName": "public",
-        "firstRelation": "1",
-        "secondFieldNames": [
-          "study_plan_id"
-        ],
-        "secondTableName": "Task",
-        "secondSchemaName": "public",
         "secondRelation": "*",
         "checkPoints": []
       },
@@ -206,195 +86,15 @@
         "firstFieldNames": [
           "id"
         ],
-        "firstTableName": "Subjects",
+        "firstTableName": "Students",
         "firstSchemaName": "public",
         "firstRelation": "1",
         "secondFieldNames": [
-          "subjects_id"
+          "student_id"
         ],
-        "secondTableName": "Students",
+        "secondTableName": "TopicMastery",
         "secondSchemaName": "public",
         "secondRelation": "*",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "subjec_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "subje_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "subj_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "sub_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "su_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "s_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "t_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "to_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "top_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "topi_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
-        "checkPoints": []
-      },
-      {
-        "firstFieldNames": [
-          "id"
-        ],
-        "firstTableName": "Subjects",
-        "firstSchemaName": "public",
-        "firstRelation": "*",
-        "secondFieldNames": [
-          "topic_id"
-        ],
-        "secondTableName": "StudentCard",
-        "secondSchemaName": "public",
-        "secondRelation": "1",
         "checkPoints": []
       },
       {
@@ -403,26 +103,116 @@
         ],
         "firstTableName": "Topics",
         "firstSchemaName": "public",
-        "firstRelation": "*",
+        "firstRelation": "1",
         "secondFieldNames": [
           "topic_id"
         ],
-        "secondTableName": "StudentCard",
+        "secondTableName": "TopicMastery",
         "secondSchemaName": "public",
-        "secondRelation": "1",
+        "secondRelation": "*",
         "checkPoints": []
       },
       {
         "firstFieldNames": [
           "id"
         ],
-        "firstTableName": "Subjects",
+        "firstTableName": "Courses",
         "firstSchemaName": "public",
         "firstRelation": "1",
         "secondFieldNames": [
           "subject_id"
         ],
-        "secondTableName": "StudyPlan",
+        "secondTableName": "Topics",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id"
+        ],
+        "firstTableName": "Students",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "student_id"
+        ],
+        "secondTableName": "Task",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id"
+        ],
+        "firstTableName": "Courses",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "course_id"
+        ],
+        "secondTableName": "StudentsCourses",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id"
+        ],
+        "firstTableName": "Students",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "student_id"
+        ],
+        "secondTableName": "StudentsCourses",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id"
+        ],
+        "firstTableName": "Courses",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "course_id"
+        ],
+        "secondTableName": "Topics",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id"
+        ],
+        "firstTableName": "Topics",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "topic_id"
+        ],
+        "secondTableName": "Problems",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id"
+        ],
+        "firstTableName": "Courses",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "course_id"
+        ],
+        "secondTableName": "Task",
         "secondSchemaName": "public",
         "secondRelation": "*",
         "checkPoints": []
