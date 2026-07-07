@@ -10,6 +10,12 @@ Enum Status {
     waiting
 }
 
+Enum Difficulty {
+    easy
+    midlle 
+    hard
+}
+
 Table Students {
     id uuid [pk]
     name varchar
@@ -41,6 +47,8 @@ Table Problems {
     id uuid [pk]
     topic_id uuid [ref: > Topics.id]
     name varchar
+    source str
+    difficulty Difficulty
     description text
     solution text
     answer varchar
@@ -50,11 +58,10 @@ Table Problems {
 Table Task {
     id uuid [pk]
     student_id uuid [ref: > Students.id]
-    course_id uuid [ref: > Courses.id]
     problem_id uuid [ref: > Problems.id]
     created_at timestamp
     deadline timestamp
-    task_status Status
+    status Status
     updated_at timestamp
 }
 
@@ -64,5 +71,6 @@ Table TopicMastery {
     topic_id uuid [ref: > Topics.id]
     quality Quality
     description text
+    created_at timestamp
     updated_at timestamp
 }
