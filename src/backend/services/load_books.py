@@ -1,4 +1,6 @@
+from sqlalchemy import Sess
 
+class BookParser(
 
-class BookParser():
+):
     def __init__()
